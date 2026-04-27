@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# This script lists the content of the current directory, displaying only the part after the first dash
+# This script lists directory contents showing only the part after the first dash
 for file in *
 do
     if [[ "$file" == *-* ]]
-        then
-                echo "${file#*-}"
-                    fi
-                    done
+    then
+        echo "${file#*-}"
+    fi
+done
